@@ -14,9 +14,9 @@ from dataclasses import dataclass
 # Data input ex. save training_path, train_data, test_data, raw data etc
 @dataclass  # when a class only has variales; otherwise use __init__ when there's methods in class
 class DataIngestionConfig:
-    train_data_path: str = os.path.join('artifact', "train.csv")  # later on, data ingestion will save the train.csv in this particular path
-    test_data_path: str = os.path.join('artifact', "test.csv")
-    raw_data_path: str = os.path.join('artifact', "raw.csv")
+    train_data_path: str = os.path.join('artifacts', "train.csv")  # later on, data ingestion will save the train.csv in this particular path
+    test_data_path: str = os.path.join('artifacts', "test.csv")
+    raw_data_path: str = os.path.join('artifacts', "raw.csv")
 
 class DataIngestion:
     def __init__(self):
