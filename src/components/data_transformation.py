@@ -94,7 +94,7 @@ class DataTransformation:
                 transformed_input_feature_train_df, np.array(target_feature_train_df)
             ]
             test_arr = np.c_[
-                transformed_input_feature_test_df, 
+                transformed_input_feature_test_df, np.array(target_feature_test_df)
             ]
             logging.info("Combine transformed Features columns with original Target values completed")
         # Save object
